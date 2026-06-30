@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Skyline Integrated Services LTD | Premium Cleaning Services Manchester</title>
+  <meta name="title" content="Skyline Integrated Services LTD | Premium Cleaning Services Manchester">
+  <meta name="description" content="Professional residential, commercial, deep cleaning, and maintenance services in Manchester. Clean spaces. Better places. Get an instant quote today!">
+  <meta name="keywords" content="cleaning services Manchester, commercial cleaning, residential cleaning, deep cleaning, professional cleaners, Skyline cleaning">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Skyline Integrated Services LTD | Premium Cleaning Services">
+  <meta property="og:description" content="Professional residential, commercial, deep cleaning, and maintenance services in Manchester. Clean spaces. Better places. Get an instant quote today!">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="logo-wrapper" id="nav-logo">
+          <div class="logo-icon">S</div>
+          <div class="logo-text">
+            SKYLINE
+            <span>Integrated Services Ltd</span>
+          </div>
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#calculator" class="nav-link">Cost Estimator</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary nav-btn">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
+      <div class="hero-sparkle hero-sparkle-1"></div>
+      <div class="hero-sparkle hero-sparkle-2"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <span class="section-badge section-badge-light">Professional & Reliable</span>
+          <h1 class="hero-title">Clean Spaces.<br><span class="highlight-gold">Better Places.</span></h1>
+          <p class="hero-subtitle">Skyline Integrated Services LTD provides professional cleaning services you can rely on. We create spotless, healthy environments so you can focus on what matters most.</p>
+          
+          <div class="hero-actions">
+            <a href="#calculator" class="btn btn-primary">
+              <i class="fa-solid fa-calculator"></i> Calculate Cost
+            </a>
+            <a href="#services" class="btn btn-secondary">Our Services</a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">1.2K+</div>
+              <div class="hero-stat-label">Happy Clients</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Satisfaction</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">24/7</div>
+              <div class="hero-stat-label">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-badge">Our Cleaning Services</span>
+          <h2 class="section-title">Spotless Results, Every Time</h2>
+          <p class="section-subtitle">Choose from our range of professional cleaning services tailored to fit your specific needs.</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Card 1: Commercial -->
+          <div class="service-card" id="service-commercial">
+            <div class="service-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="service-card-title">Commercial Cleaning</h3>
+            <p class="service-card-desc">Keeping offices, workspaces, and commercial premises clean, hygienic, and welcoming for employees and clients alike.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('commercial')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 2: Residential -->
+          <div class="service-card" id="service-residential">
+            <div class="service-icon">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <h3 class="service-card-title">Residential Cleaning</h3>
+            <p class="service-card-desc">Thorough, reliable cleaning for homes, apartments, and living spaces. Enjoy a pristine home without lifting a finger.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('residential')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 3: Deep Cleaning -->
+          <div class="service-card" id="service-deep">
+            <div class="service-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="service-card-title">Deep Cleaning</h3>
+            <p class="service-card-desc">Detailed, intensive cleaning that reaches every hidden corner, sanitizing surfaces and removing deep-seated dirt.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('deep')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 4: Regular Maintenance -->
+          <div class="service-card" id="service-maintenance">
+            <div class="service-icon">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <h3 class="service-card-title">Regular Maintenance</h3>
+            <p class="service-card-desc">Flexible, scheduled cleaning contracts (weekly, bi-weekly, monthly) to keep your property consistently fresh and tidy.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+<!-- Card 5: School Cleaning -->
+          <div class="service-card" id="service-school">
+            <div class="service-icon">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <h3 class="service-card-title">School Cleaning</h3>
+            <p class="service-card-desc">Our services involveing  a
+               daily and periodic routine of : <br> sanitizing, disinfecting,
+                and organizing educational environments to :<br> prevent the spread of
+                 germs and create a healthy learning space.<br> It requires targeted cleaning of high-traffic areas, regular
+               floor care, and the proper handling of waste.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 6: Garden Cleaning -->
+          <div class="service-card" id="service-garden">
+            <div class="service-icon">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3 class="service-card-title">Garden Cleaning</h3>
+            <p class="service-card-desc">The very act of gardening means 
+              dealing with weeds, leaves and general garden waste accumulated
+               from trimming, dead-heading, weeding, pruning and the like.  
+               and disposing of it properly. This is a crucial part of garden
+               maintenance, as it helps to keep your outdoor
+                space tidy, healthy, and visually appealing.
+                they say air from your garden is 10000 better than air conditionals.
+              </p> 
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+<!-- Card 7: End of tenancy cleaning -->
+          <div class="service-card" id="service-end-of-tenancy">
+            <div class="service-icon">
+              <i class="fa-solid fa-key"></i>
+            </div>
+            <h3 class="service-card-title">End of Tenancy Cleaning</h3>
+            <p class="service-card-desc">with our comprehensive top-to-bottom deep clean 
+required before or after moving out of a rental property.
+we ensures the return of your security deposit and 
+prepares the unit for the next occupant.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+          <!-- Card 5: School Cleaning -->
+          <div class="service-card" id="airbnb-cleaning">
+            <div class="service-icon">
+              <i class="fa-solid fa-home"></i>
+            </div>
+            <h3 class="service-card-title">Airbnb Cleaning</h3>
+            <p class="service-card-desc">Airbnb cleaning refers to the rapid, 
+              high-standard turnover and reset process between guests. It is a critical
+               component of short-term rentals. It generally involves washing linens,
+                sanitizing bathrooms and kitchens, restocking consumables, 
+              and deep-cleaning between bookings to ensure a 5-star rating.</p>
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Quality Badges -->
+    <section id="why-us" class="why-choose-us section-padding">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-graphics">
+            <div class="about-img-box">
+              <!-- Inline SVG placeholder image with elegant cleaning/premium aesthetics -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" style="width:100%; height:100%; display:block;">
+                <defs>
+                  <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0a2540" />
+                    <stop offset="100%" stop-color="#0d3b66" />
+                  </linearGradient>
+                  <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#c5a880" />
+                    <stop offset="100%" stop-color="#d4af37" />
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blue-grad)"/>
+                <!-- Geometric design patterns -->
+                <circle cx="450" cy="100" r="120" fill="none" stroke="url(#gold-grad)" stroke-width="2" opacity="0.3"/>
+                <path d="M 0 300 Q 200 200 400 350 T 600 200 L 600 450 L 0 450 Z" fill="rgba(197, 168, 128, 0.05)"/>
+                <!-- Graphical symbols of sparkles -->
+                <path d="M 150 150 L 155 165 L 170 170 L 155 175 L 150 190 L 145 175 L 130 170 L 145 165 Z" fill="url(#gold-grad)"/>
+                <path d="M 380 220 L 383 230 L 393 233 L 383 236 L 380 246 L 377 236 L 367 233 L 377 230 Z" fill="url(#gold-grad)" transform="scale(0.7) translate(150, 50)"/>
+                <path d="M 280 100 L 282 108 L 290 110 L 282 112 L 280 120 L 278 112 L 270 110 L 278 108 Z" fill="#ffffff" opacity="0.7"/>
+                
+                <!-- Stylized building mockup -->
+                <rect x="220" y="160" width="160" height="200" rx="10" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.4"/>
+                <line x1="260" y1="200" x2="340" y2="200" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+                <line x1="260" y1="250" x2="340" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+                <line x1="260" y1="300" x2="340" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+              </svg>
+            </div>
+            
+            <div class="about-glow-box">
+              <span class="about-glow-badge">Our Commitment</span>
+              <h3 class="about-glow-title">Cleaner Spaces. Healthier Lives.</h3>
+              <p class="about-glow-desc">We combine eco-friendly materials and detailed workflows to ensure your health, security, and peace of mind.</p>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <span class="section-badge">Why Choose Us</span>
+            <h2 class="section-title">The Skyline Guarantee</h2>
+            <p class="section-subtitle">We build long-term relationships with clients through excellence, consistency, and professional integrity.</p>
+            
+            <ul class="about-points">
+              <!-- Point 1 -->
+              <li class="about-point">
+                <div class="about-point-icon">
+                  <i class="fa-solid fa-shield-check"></i>
+                </div>
+                <div class="about-point-text">
+                  <h4>Professional & Vetted Staff</h4>
+                  <p>Every member of our team is fully trained, background-checked, and committed to high standards of cleanliness.</p>
+                </div>
+              </li>
+              
+              <!-- Point 2 -->
+              <li class="about-point">
+                <div class="about-point-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="about-point-text">
+                  <h4>Flexible, Reliable Schedules</h4>
+                  <p>We work around your schedule. Whether you need a one-off deep clean or recurring weekly maintenance, we adapt to you.</p>
+                </div>
+              </li>
+              
+              <!-- Point 3 -->
+              <li class="about-point">
+                <div class="about-point-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="about-point-text">
+                  <h4>Premium Quality Standards</h4>
+                  <p>Professional. Reliable. Trusted. We inspect our work rigorously and guarantee 100% satisfaction on every job.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Cost Calculator Section -->
+    <section id="calculator" class="calculator-section section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-badge section-badge-light">Instant Estimates</span>
+          <h2 class="section-title section-title-white">Cleaning Cost Estimator</h2>
+          <p class="section-subtitle">Get an immediate, transparent estimate tailored to your space and requirements.</p>
+        </div>
+        
+        <div class="calculator-grid">
+          <!-- Calculator Form -->
+          <div class="calculator-card">
+
+            <!-- Service Choice -->
+            <div class="calc-group">
+              <label class="calc-label">1. Choose Service Type</label>
+              <div class="service-selector-grid">
+                <div class="service-option-btn active" data-service="residential" onclick="selectCalcService('residential')">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  <span>Residential</span>
+                </div>
+
+                <div class="service-option-btn" data-service="commercial" onclick="selectCalcService('commercial')">
+                  <i class="fa-solid fa-building"></i>
+                  <span>Commercial</span>
+                </div>
+
+                <div class="service-option-btn" data-service="deep" onclick="selectCalcService('deep')">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Deep Clean</span>
+                </div>
+
+                <div class="service-option-btn" data-service="maintenance" onclick="selectCalcService('maintenance')">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <span>Maintenance</span>
+                </div>
+
+                 <div class="service-option-btn" data-service="school" onclick="selectCalcService('school')">
+                  <i class="fa-solid fa-school"></i>
+                  <span>School Cleaning</span>
+                </div>
+
+                 <div class="service-option-btn" data-service="gardening" onclick="selectCalcService('gardening')">
+                  <i class="fa-solid fa-leaf"></i>
+                  <span>Gardening</span>
+                </div>
+
+                 <div class="service-option-btn" data-service="tenancy" onclick="selectCalcService('tenancy')">
+                  <i class="fa-solid fa-file-signature"></i>
+                  <span>End of Tenancy</span>
+                </div>
+
+                <div class="service-option-btn" data-service="airbnb" onclick="selectCalcService('airbnb')">
+                  <i class="fa-solid fa-key"></i>
+                  <span>AirBnB</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Size Selector -->
+            <div class="calc-group">
+              <label class="calc-label" id="size-label">2. Size of Space (approx. 2 Bedrooms / 800 sq ft)</label>
+              <div class="calc-range-wrapper">
+                <input type="range" min="1" max="10" value="2" class="slider" id="size-slider" oninput="updateCalcValues()">
+                <div class="calc-range-val" id="size-display">2 Units</div>
+              </div>
+            </div>
+            
+            <!-- Frequency Selector -->
+            <div class="calc-group">
+              <label class="calc-label">3. Frequency of Service</label>
+              <div class="frequency-grid">
+                <div class="freq-option-btn active" data-freq="one-time" onclick="selectCalcFreq('one-time')">One-Time</div>
+                <div class="freq-option-btn" data-freq="weekly" onclick="selectCalcFreq('weekly')">Weekly</div>
+                <div class="freq-option-btn" data-freq="bi-weekly" onclick="selectCalcFreq('bi-weekly')">Bi-Weekly</div>
+                <div class="freq-option-btn" data-freq="monthly" onclick="selectCalcFreq('monthly')">Monthly</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Estimator Output Card -->
+          <div class="calculator-results">
+            <div class="results-header">
+              <h3 class="results-title">Estimate Summary</h3>
+              <p>Based on your selected specifications:</p>
+            </div>
+            
+            <ul class="summary-details">
+              <li class="summary-item">
+                <span>Selected Service:</span>
+                <span id="summary-service">Residential Cleaning</span>
+              </li>
+              <li class="summary-item">
+                <span>Estimated Size:</span>
+                <span id="summary-size">2 Bedrooms / Units</span>
+              </li>
+              <li class="summary-item">
+                <span>Frequency:</span>
+                <span id="summary-frequency">One-Time</span>
+              </li>
+            </ul>
+            
+            <div class="price-display-wrapper">
+              <div class="price-label">Estimated Cost</div>
+              <div class="price-val" id="price-val">£60</div>
+              <div class="price-frequency" id="price-freq-label">total cost</div>
+            </div>
+            
+            <button class="btn btn-primary calc-action-btn" onclick="applyEstimateToForm()">
+              Book With This Estimate
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-badge">Client Reviews</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Real feedback from homes and offices we service in the Manchester area.</p>
+        </div>
+        
+        <div class="testimonial-slider-container">
+          <div class="testimonial-wrapper" id="testimonial-wrapper">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Skyline Integrated Services has transformed our workspace. They are extremely thorough, reliable, and professional. We wouldn't use anyone else for our commercial cleaning needs."
+                </blockquote>
+                <div class="testimonial-client">
+                  <div class="testimonial-avatar">
+                    <!-- Custom clean SVG avatar for local integrity -->
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="#0a2540">
+                      <circle cx="50" cy="35" r="20" fill="#c5a880"/>
+                      <path d="M50 60 C30 60 20 75 20 90 L80 90 C80 75 70 60 50 60 Z" fill="#c5a880"/>
+                    </svg>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Sarah Jenkins</h4>
+                    <span>Office Manager, Manchester City Centre</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "I booked a deep clean after a house renovation. The team did an incredible job; they reached every corner and left the house sparkling. Brilliant service and very polite staff!"
+                </blockquote>
+                <div class="testimonial-client">
+                  <div class="testimonial-avatar">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="#0a2540">
+                      <circle cx="50" cy="35" r="20" fill="#c5a880"/>
+                      <path d="M50 60 C30 60 20 75 20 90 L80 90 C80 75 70 60 50 60 Z" fill="#c5a880"/>
+                    </svg>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>David Alabi</h4>
+                    <span>Homeowner, Swinton</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Their weekly regular cleaning is a lifesaver. Extremely reliable, friendly, and trustworthy. They pay attention to detail and leave our home feeling fresh and immaculate."
+                </blockquote>
+                <div class="testimonial-client">
+                  <div class="testimonial-avatar">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="#0a2540">
+                      <circle cx="50" cy="35" r="20" fill="#c5a880"/>
+                      <path d="M50 60 C30 60 20 75 20 90 L80 90 C80 75 70 60 50 60 Z" fill="#c5a880"/>
+                    </svg>
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Emma Thornton</h4>
+                    <span>Resident, Worsley</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn" id="prev-slide" aria-label="Previous testimonial">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="slider-dots" id="slider-dots"></div>
+            <button class="slider-btn" id="next-slide" aria-label="Next testimonial">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Information Panel -->
+          <div class="contact-info-panel">
+            <h3 class="contact-info-title">Get in Touch</h3>
+            <p class="contact-info-desc">Let us take care of the cleaning, so you can enjoy a fresher, cleaner space. Contact us directly or submit the booking form.</p>
+            
+            <ul class="contact-details">
+              <li class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail-content">
+                  <h4>Call Us</h4>
+                  <a href="tel:07495473483" id="contact-phone">07495 473483</a>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail-content">
+                  <h4>Email Us</h4>
+                  <a href="mailto:aishaene7@gmail.com" id="contact-email">aishaene7@gmail.com</a>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-detail-content">
+                  <h4>Address</h4>
+                  <p id="contact-address">35 Swinton Hall Road, Manchester, M27 4BL</p>
+                </div>
+              </li>
+            </ul>
+            
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          
+          <!-- Booking Form -->
+          <div class="booking-form-wrapper">
+            <h3 class="booking-form-title">Request a Booking</h3>
+            <p class="booking-form-subtitle">Fill in the details below and we will contact you within 2 hours to confirm your schedule.</p>
+            
+            <form id="booking-form" novalidate>
+              <div class="form-grid">
+                <!-- Name -->
+                <div class="form-group">
+                  <input type="text" id="form-name" class="form-control" placeholder=" " required>
+                  <label for="form-name" class="form-label">Full Name</label>
+                </div>
+                
+                <!-- Email -->
+                <div class="form-group">
+                  <input type="email" id="form-email" class="form-control" placeholder=" " required>
+                  <label for="form-email" class="form-label">Email Address</label>
+                </div>
+                
+                <!-- Phone -->
+                <div class="form-group">
+                  <input type="tel" id="form-phone" class="form-control" placeholder=" " required>
+                  <label for="form-phone" class="form-label">Phone Number</label>
+                </div>
+                
+                <!-- Service Selection -->
+                <div class="form-group">
+                  <div class="form-select-wrapper">
+                    <select id="form-service" class="form-control" required>
+                      <option value="" disabled selected hidden></option>
+                      <option value="residential">Residential Cleaning</option>
+                      <option value="commercial">Commercial Cleaning</option>
+                      <option value="deep">Deep Cleaning</option>
+                      <option value="maintenance">Regular Maintenance</option>
+                       <option value="airbnb">AirBnB Cleaning</option>
+                      <option value="tenancy">End of Tenancy Cleaning</option>
+                      <option value="school">School Cleaning</option>
+                      <option value="gardening">Gardening & Outdoor</option>
+                    </select>
+                  </div>
+                  <label for="form-service" class="form-label">Select Service</label>
+                </div>
+                
+                <!-- Size details -->
+                <div class="form-group">
+                  <input type="text" id="form-size" class="form-control" placeholder=" ">
+                  <label for="form-size" class="form-label">Space Size / Rooms (e.g. 3 Beds)</label>
+                </div>
+
+                <!-- Frequency -->
+                <div class="form-group">
+                  <div class="form-select-wrapper">
+                    <select id="form-frequency" class="form-control">
+                      <option value="one-time" selected>One-Time Service</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-Weekly</option>
+                      <option value="monthly">Monthly</option>
+                    </select>
+                  </div>
+                  <label for="form-frequency" class="form-label">Service Frequency</label>
+                </div>
+                
+                <!-- Description -->
+                <div class="form-group form-group-full">
+                  <textarea id="form-message" class="form-control" placeholder=" "></textarea>
+                  <label for="form-message" class="form-label">Special Notes / Requirements</label>
+                </div>
+
+<div class="post-form">
+        <!-- File Upload Area -->
+        <div class="form-group">
+            <label for="media-file">upload photo or video:</label>
+                  <h4>Optional </h4>
+            <!-- accept attribute limits selection to images and videos -->
+            <input type="file" id="media-file" name="media_file" accept="image/*,video/*" required>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <!-- Submit -->
+                <div class="form-group-full">
+                  <button type="submit" id="form-submit" class="btn btn-primary submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Booking Request
+                  </button>
+                </div>
+              </div>
+              
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: About -->
+          <div>
+            <div class="logo-wrapper footer-logo">
+              <div class="logo-icon">S</div>
+              <div class="logo-text">
+                SKYLINE
+                <span>Integrated Services Ltd</span>
+              </div>
+            </div>
+            <p class="footer-desc">Professional. Reliable. Trusted. Premier cleaning solutions for commercial and residential properties across Greater Manchester.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          
+          <!-- Col 2: Services -->
+          <div>
+            <h4 class="footer-col-title">Services</h4>
+            <ul class="footer-links">
+              <li class="footer-link-item"><a href="#services" class="footer-link">Commercial Cleaning</a></li>
+              <li class="footer-link-item"><a href="#services" class="footer-link">Residential Cleaning</a></li>
+              <li class="footer-link-item"><a href="#services" class="footer-link">Deep Cleaning</a></li>
+              <li class="footer-link-item"><a href="#services" class="footer-link">Regular Maintenance</a></li>
+            </ul>
+          </div>
+          
+          <!-- Col 3: Company -->
+          <div>
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li class="footer-link-item"><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+              <li class="footer-link-item"><a href="#testimonials" class="footer-link">Reviews & Feedback</a></li>
+              <li class="footer-link-item"><a href="#calculator" class="footer-link">Cost Calculator</a></li>
+              <li class="footer-link-item"><a href="#contact" class="footer-link">Get a Quote</a></li>
+            </ul>
+          </div>
+          
+          <!-- Col 4: Newsletter -->
+          <div>
+            <h4 class="footer-col-title">Stay Updated</h4>
+            <p class="newsletter-text">Subscribe to our newsletter for exclusive discounts and cleaning tips.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletter-email" aria-label="Newsletter email input">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe newsletter">
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Skyline Integrated Services LTD. All rights reserved. &copy; and design by MOH-TECH</p>
+          <div class="footer-bottom-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Service Details Modal (Modular overlays) -->
+  <div id="service-modal" class="modal-overlay" style="display:none;" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeServiceModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modal-icon-container"></div>
+        <h3 class="modal-title" id="modal-title-text">Service Detail</h3>
+      </div>
+      <div class="modal-body" id="modal-body-text">
+        <!-- Service dynamic text -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="bookFromModal()">Book This Service</button>
+        <button class="btn btn-secondary" onclick="closeServiceModal()" style="color:var(--primary); border-color:rgba(10,37,64,0.2);">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
