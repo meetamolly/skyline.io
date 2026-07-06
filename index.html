@@ -155,7 +155,7 @@
                 and organizing educational environments to :<br> prevent the spread of
                  germs and create a healthy learning space.<br> It requires targeted cleaning of high-traffic areas, regular
                floor care, and the proper handling of waste.</p>
-            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('school')">
               Read More <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -174,7 +174,7 @@
                 space tidy, healthy, and visually appealing.
                 they say air from your garden is 10000 better than air conditionals.
               </p> 
-            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('Garden')">
               Read More <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -189,7 +189,7 @@
 required before or after moving out of a rental property.
 we ensures the return of your security deposit and 
 prepares the unit for the next occupant.</p>
-            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('End of Tenancy')">
               Read More <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -206,7 +206,7 @@ prepares the unit for the next occupant.</p>
                component of short-term rentals. It generally involves washing linens,
                 sanitizing bathrooms and kitchens, restocking consumables, 
               and deep-cleaning between bookings to ensure a 5-star rating.</p>
-            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('maintenance')">
+            <a href="javascript:void(0)" class="service-card-link" onclick="openServiceModal('Airbnb')">
               Read More <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -312,7 +312,6 @@ prepares the unit for the next occupant.</p>
         <div class="calculator-grid">
           <!-- Calculator Form -->
           <div class="calculator-card">
-
             <!-- Service Choice -->
             <div class="calc-group">
               <label class="calc-label">1. Choose Service Type</label>
@@ -321,46 +320,38 @@ prepares the unit for the next occupant.</p>
                   <i class="fa-solid fa-house-chimney"></i>
                   <span>Residential</span>
                 </div>
-
                 <div class="service-option-btn" data-service="commercial" onclick="selectCalcService('commercial')">
                   <i class="fa-solid fa-building"></i>
                   <span>Commercial</span>
                 </div>
-
                 <div class="service-option-btn" data-service="deep" onclick="selectCalcService('deep')">
                   <i class="fa-solid fa-wand-magic-sparkles"></i>
                   <span>Deep Clean</span>
                 </div>
-
                 <div class="service-option-btn" data-service="maintenance" onclick="selectCalcService('maintenance')">
                   <i class="fa-solid fa-calendar-days"></i>
                   <span>Maintenance</span>
                 </div>
-
                  <div class="service-option-btn" data-service="school" onclick="selectCalcService('school')">
                   <i class="fa-solid fa-school"></i>
                   <span>School Cleaning</span>
                 </div>
-
                  <div class="service-option-btn" data-service="gardening" onclick="selectCalcService('gardening')">
                   <i class="fa-solid fa-leaf"></i>
                   <span>Gardening</span>
                 </div>
-
                  <div class="service-option-btn" data-service="tenancy" onclick="selectCalcService('tenancy')">
                   <i class="fa-solid fa-file-signature"></i>
                   <span>End of Tenancy</span>
                 </div>
-
                 <div class="service-option-btn" data-service="airbnb" onclick="selectCalcService('airbnb')">
                   <i class="fa-solid fa-key"></i>
                   <span>AirBnB</span>
                 </div>
               </div>
-            </div>
             
             <!-- Size Selector -->
-            <div class="calc-group">
+            <div> class="calc-group">
               <label class="calc-label" id="size-label">2. Size of Space (approx. 2 Bedrooms / 800 sq ft)</label>
               <div class="calc-range-wrapper">
                 <input type="range" min="1" max="10" value="2" class="slider" id="size-slider" oninput="updateCalcValues()">
@@ -369,7 +360,7 @@ prepares the unit for the next occupant.</p>
             </div>
             
             <!-- Frequency Selector -->
-            <div class="calc-group">
+            <div> class="calc-group">
               <label class="calc-label">3. Frequency of Service</label>
               <div class="frequency-grid">
                 <div class="freq-option-btn active" data-freq="one-time" onclick="selectCalcFreq('one-time')">One-Time</div>
@@ -438,7 +429,8 @@ prepares the unit for the next occupant.</p>
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <blockquote class="testimonial-quote">
-                  "Skyline Integrated Services has transformed our workspace. They are extremely thorough, reliable, and professional. We wouldn't use anyone else for our commercial cleaning needs."
+                  "Skyline Integrated Services has transformed our workspace. They are extremely thorough,
+                   reliable, and professional. We wouldn't use anyone else for our commercial cleaning needs."
                 </blockquote>
                 <div class="testimonial-client">
                   <div class="testimonial-avatar">
@@ -467,7 +459,8 @@ prepares the unit for the next occupant.</p>
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <blockquote class="testimonial-quote">
-                  "I booked a deep clean after a house renovation. The team did an incredible job; they reached every corner and left the house sparkling. Brilliant service and very polite staff!"
+                  "I booked a deep clean after a house renovation. The team did an incredible job; they 
+                  reached every corner and left the house sparkling. Brilliant service and very polite staff!"
                 </blockquote>
                 <div class="testimonial-client">
                   <div class="testimonial-avatar">
@@ -567,9 +560,12 @@ prepares the unit for the next occupant.</p>
             </ul>
             
             <div class="social-links">
-              <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/SkylineIntegratedServices" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/skylineintegratedservicesltd?utm_source=qr" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/aisha-mohammed-abb6483ba/" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/@Skylineintegratedservicesltd" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://vm.tiktok.com/ZNRKvLasP/" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          
             </div>
           </div>
           
@@ -651,7 +647,7 @@ prepares the unit for the next occupant.</p>
         </div>
     </form>
 </div>
-   <!-- Submit -->
+                <!-- Submit -->
                 <div class="form-group-full">
                   <button type="submit" id="form-submit" class="btn btn-primary submit-btn">
                     <i class="fa-solid fa-paper-plane"></i> Send Booking Request
@@ -739,6 +735,7 @@ prepares the unit for the next occupant.</p>
       </div>
     </div>
   </footer>
+
   <!-- Service Details Modal (Modular overlays) -->
   <div id="service-modal" class="modal-overlay" style="display:none;" role="dialog" aria-modal="true">
     <div class="modal-card">
