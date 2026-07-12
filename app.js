@@ -708,3 +708,28 @@ function showToast(title, message, type = 'success') {
     }, 400);
   }, 4500);
 }
+
+await step.do(
+  "sync customer",
+  {
+    retries: {
+      limit: 5,
+      delay: ({ ctx, error }) => {
+        if (error.message.includes("rate limit")) {
+          return `${ctx.attempt * 30} seconds`;
+        }
+
+        return "10 seconds";
+      },
+    },
+  },
+  async () => {
+    await syncCustomer();
+  },
+);
+
+
+
+
+
+
